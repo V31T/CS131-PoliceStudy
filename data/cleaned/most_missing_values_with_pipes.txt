@@ -1,0 +1,17 @@
+Column "location" has 1473 missing values
+Column "lat" has 3457 missing values
+Column "lng" has 3457 missing values
+Column "subject_race" has 4634 missing values
+Column "type" has 5903 missing values
+Column "arrest_made" has 76 missing values
+Column "citation_issued" has 76 missing values
+Column "outcome" has 11384 missing values
+Column "contraband_found" has 9485 missing values
+Column "search_conducted" has 1378 missing values
+Column "reason_for_stop" has 5731 missing values
+Column "use_of_force_description" has 14584 missing values
+Column "use_of_force_reason" has 8388 missing values
+Column "raw_search" has 4683 missing values
+Column "raw_call_desc" has 1 missing values
+Column "raw_race" has 4634 missing values
+Column "raw_event_desc" has 76 missing values
