@@ -16,6 +16,8 @@ if [[ ! -f "$in_file" ]]; then
     	exit 1
 fi
 
+# Store header row 
+header=$(head -n 1 "$in_file")
 
 # Remove any rows that contain a "|"
 echo "Removing any rows with a pipe ('|')..."
@@ -78,11 +80,19 @@ END {
 
 # Remove first column and last 6 columns-- not needed for our questions of interest
 echo "Removing first column and last 6 columns..."
-cut -d',' -f2-14 temp_file3 > "$out_file"
+cut -d',' -f2-14 temp_file3 > temp_file4
+
+
+# Adjust header to be consistent with new columns
+header=$(echo "$header" | cut -d',' -f2-14)
+
+# Add header to cleaned data
+echo "$header" > "$out_file"
+cat temp_file4 >> "$out_file"
 
 
 # Clean up
-rm -f temp_file1 temp_file2 temp_file3
+rm -f temp_file1 temp_file2 temp_file3 temp_file4
 mv most_missing_values.txt data/cleaned
 mv $out_file data/cleaned
 

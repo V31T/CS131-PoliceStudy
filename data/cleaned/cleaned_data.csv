@@ -1,3 +1,4 @@
+date,time,location,lat,lng,subject_race,type,arrest_made,citation_issued,outcome,contraband_found,search_conducted,reason_for_stop
 2013-09-01,00:00:45,ALUM ROCK AV AND N KING RD,37.3529345,-121.8555622,white,vehicular,FALSE,FALSE,NA,NA,FALSE,Vehicle Code Violation
 2013-09-01,00:08:32,NA,NA,NA,black,vehicular,FALSE,FALSE,NA,NA,FALSE,Vehicle Code Violation
 2013-09-01,00:08:37,TULLY RD AND LUCRETIA AV,37.3128518,-121.8402649,hispanic,vehicular,FALSE,TRUE,citation,NA,FALSE,Vehicle Code Violation
