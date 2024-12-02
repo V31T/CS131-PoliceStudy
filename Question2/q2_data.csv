@@ -1,4 +1,4 @@
-race,arrest_made,search_conducted
+subject_race,arrest_made,search_conducted
 white,False,False
 black,False,False
 hispanic,False,False
